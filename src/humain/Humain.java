@@ -3,9 +3,9 @@ package humain;
 public class Humain {
     private String nom;
     private String prenom;
-    private String poids;
+    private int poids;
 
-    public Humain(String nom, String prenom, String poids) {
+    public Humain(String nom, String prenom, int poids) {
         this.nom = nom;
         this.prenom = prenom;
         this.poids = poids;
@@ -27,11 +27,11 @@ public class Humain {
         this.prenom = prenom;
     }
 
-    public String getPoids() {
+    public int getPoids() {
         return poids;
     }
 
-    public void setPoids(String poids) {
+    public void setPoids(int poids) {
         this.poids = poids;
     }
 
