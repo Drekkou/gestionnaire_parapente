@@ -62,3 +62,5 @@ Coordonnee ieme_coord(Liste_Coord liste, int i){
     }
     return cell->coord;
 }
+
+Liste_Coord list_map(Liste_Coord liste,)

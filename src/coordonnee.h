@@ -27,10 +27,19 @@ typedef struct Longitude_
     orientation o;
 } Longitude;
 
+typedef struct Altitude_
+{
+    int valeur;
+} Altitude;
+
 typedef struct Coordonnee_
 {
     Latitude lat;
     Longitude lon;
+
+    //todo trouver a quoi correspondent les dexu alt différentes et chosir laquelle utiliser
+    Altitude alt_a;
+    Altitude alt_b;
 } Coordonnee;
 
 typedef struct Cellule_Liste_Coord_
@@ -46,6 +55,7 @@ typedef struct Liste_Coord_
     Cellule_Liste_Coord *sentinelle;
 } Liste_Coord;
 
+Coordonnee *creer_coord(int lat, int lon, int alt_a, int alt_b);
 
 // creer une cellule de liste de coordonnee a partir d'une coordonnee
 Cellule_Liste_Coord *creer_cellule_liste_coord(Coordonnee coord);
